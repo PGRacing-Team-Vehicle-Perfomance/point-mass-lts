@@ -11,10 +11,11 @@ set(SOURCE_FILES )
 add_executable(${PROJECT_NAME} 
     src/main.cpp
     src/vehicle/vehicle.cpp
+    src/vehicle/point-mass-vehicle.cpp
     src/vehicle/aero/aero.cpp
     src/simulation/skidpad.cpp
     src/vehicle/tire/tireSimple.cpp
-  )
+    "src/vehicle/point-mass-vehicle.h" "src/vehicle/point-mass-vehicle.cpp")
 
 target_include_directories(gfr_sim PRIVATE src)
 
