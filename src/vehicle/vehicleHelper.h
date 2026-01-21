@@ -6,14 +6,14 @@
 class Angle {
     float value_;
 
-    static constexpr float normalize(double v) {
+    static float normalize(double v) {
         v = std::fmod(v, 360.0);
         return v < 0 ? v + 360.0 : v;
     }
 
    public:
-    constexpr Angle(float v = 0) : value_(normalize(v)) {}
-    constexpr float get() const { return value_; }
+     Angle(float v = 0) : value_(normalize(v)) {}
+     float get() const { return value_; }
 
     Angle operator+(float rhs) const { return Angle(value_ + rhs); }
     Angle operator-(float rhs) const { return Angle(value_ - rhs); }
@@ -27,7 +27,7 @@ class Angle {
         return *this;
     }
 
-    float getRadians() { return value_ / 180.0f * M_PI; }
+    float getRadians() { return value_ / 180.0f; }
 };
 
 template <typename T>
