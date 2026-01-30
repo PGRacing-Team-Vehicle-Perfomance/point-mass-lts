@@ -28,7 +28,19 @@ Available targets:
 | `make clean` | Remove build directory |
 | `make help` | Show help |
 
-On Windows use `make` via MinGW, Git Bash, or WSL.
+On Windows use `make` via MSYS2/MinGW or WSL.
+
+### Manual Build (CMake)
+
+If `make` is not available:
+
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build .
+./point-mass-lts
+```
 
 ### Windows (Visual Studio)
 
