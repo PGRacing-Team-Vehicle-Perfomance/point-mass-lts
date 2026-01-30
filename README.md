@@ -9,24 +9,28 @@ Based on: <https://github.com/BAAdas/lap-doer>
 - C++23 or higher
 - CMake 3.28+
 
-## Building
-
-### Linux / WSL
+## Building & Running
 
 ```bash
 git clone https://github.com/PGRacing-Team-Vehicle-Perfomance/point-mass-lts.git
 cd point-mass-lts
-mkdir build && cd build
-cmake ..
-cmake --build .
-./point-mass-lts
+make          # Build Release
+make run      # Build and run
 ```
 
-### Windows
+Available targets:
+| Command | Description |
+|---------|-------------|
+| `make` | Build Release (default) |
+| `make debug` | Build Debug |
+| `make run` | Build and run |
+| `make rebuild` | Clean and rebuild |
+| `make clean` | Remove build directory |
+| `make help` | Show help |
 
-```bash
-git clone https://github.com/PGRacing-Team-Vehicle-Perfomance/point-mass-lts.git
-```
+On Windows use `make` via MinGW, Git Bash, or WSL.
+
+### Windows (Visual Studio)
 
 - Open Visual Studio
 - Click File -> Open -> CMake and select the top level CMakeLists.txt
