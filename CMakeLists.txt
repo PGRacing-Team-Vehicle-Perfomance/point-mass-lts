@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(gfr_sim LANGUAGES CXX)
+project(point-mass-lts LANGUAGES CXX)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
@@ -17,5 +17,5 @@ add_executable(${PROJECT_NAME}
     src/vehicle/tire/tireSimple.cpp
     "src/vehicle/point-mass-vehicle.h" "src/vehicle/point-mass-vehicle.cpp")
 
-target_include_directories(gfr_sim PRIVATE src)
+target_include_directories(point-mass-lts PRIVATE src)
 

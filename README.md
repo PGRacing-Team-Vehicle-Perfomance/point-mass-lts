@@ -14,18 +14,18 @@ Based on: <https://github.com/BAAdas/lap-doer>
 ### Linux / WSL
 
 ```bash
-git clone https://github.com/PGRacing-Team-Vehicle-Perfomance/laptime_simulator.git
-cd gfr_sim
+git clone https://github.com/PGRacing-Team-Vehicle-Perfomance/point-mass-lts.git
+cd point-mass-lts
 mkdir build && cd build
 cmake ..
 cmake --build .
-./gfr_sim
+./point-mass-lts
 ```
 
 ### Windows
 
 ```bash
-git clone https://github.com/PGRacing-Team-Vehicle-Perfomance/laptime_simulator.git
+git clone https://github.com/PGRacing-Team-Vehicle-Perfomance/point-mass-lts.git
 ```
 
 - Open Visual Studio
